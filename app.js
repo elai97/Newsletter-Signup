@@ -65,9 +65,3 @@ app.post('/', (req, res) => {
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
-
-// Mailchimp API key
-// 9f0a50712bc6a10daaf1e4f7550b097a-us14
-
-// lists id
-// b17b12f5f5
