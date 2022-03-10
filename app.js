@@ -34,11 +34,15 @@ app.post('/', (req, res) => {
 
     const jsonData = JSON.stringify(data);
 
-    const url = "https://us14.api.mailchimp.com/3.0/lists/b17b12f5f5";
+    // list id is censored so generate yours at mailchimp.com
+
+    const url = "https://us14.api.mailchimp.com/3.0/lists/b1**12**f5";
+
+    // API key is censored so generate yours at mailchimp.com
 
     const Options = {
         method: "POST",
-        auth: "elai:9f0a50712bc6a10daaf1e4f7550b097a-us14"
+        auth: "elai:9f0a****2bc6a1****f1e4f7550b****-us14"
     }
 
     const request = https.request(url, Options, function(response) {
